@@ -1,0 +1,34 @@
+[
+    {
+        imageName: "puppy1"
+        name: "Puppy 1"
+    },
+    {
+        imageName: "puppy2"
+        name: "Puppy 2"
+    },
+    {
+        imageName: "puppy3"
+        name: "Puppy 3"
+    },
+    {
+        imageName: "puppy4"
+        name: "Puppy 4"
+    },
+    {
+        imageName: "puppy5"
+        name: "Puppy 5"
+    },
+    {
+        imageName: "puppy6"
+        name: "Puppy 6"
+    },
+    {
+        imageName: "puppy7"
+        name: "Puppy 7
+    },
+    {
+        imageName: "puppy8"
+        name: "Puppy 8"
+    }
+]

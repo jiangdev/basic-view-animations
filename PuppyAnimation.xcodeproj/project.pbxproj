@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2387D921FA52D0200A26812 /* PuppyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2387D911FA52D0200A26812 /* PuppyTableViewCell.swift */; };
+		D2387D941FA5304400A26812 /* Puppy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2387D931FA5304400A26812 /* Puppy.swift */; };
+		D2387D961FA532E600A26812 /* PuppyData.json in Sources */ = {isa = PBXBuildFile; fileRef = D2387D951FA532E600A26812 /* PuppyData.json */; };
 		D2ECE03F1F8EDF8F00F85974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE03E1F8EDF8F00F85974 /* AppDelegate.swift */; };
 		D2ECE0441F8EDF8F00F85974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ECE0421F8EDF8F00F85974 /* Main.storyboard */; };
 		D2ECE0461F8EDF8F00F85974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2ECE0451F8EDF8F00F85974 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D2387D911FA52D0200A26812 /* PuppyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyTableViewCell.swift; sourceTree = "<group>"; };
+		D2387D931FA5304400A26812 /* Puppy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puppy.swift; sourceTree = "<group>"; };
+		D2387D951FA532E600A26812 /* PuppyData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PuppyData.json; sourceTree = "<group>"; };
 		D2ECE03B1F8EDF8F00F85974 /* PuppyAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuppyAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2ECE03E1F8EDF8F00F85974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2ECE0431F8EDF8F00F85974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2387D901FA5216F00A26812 /* PuppyTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D2ECE0511F8EDFCB00F85974 /* PuppyTableViewController.swift */,
+				D2387D911FA52D0200A26812 /* PuppyTableViewCell.swift */,
+				D2387D931FA5304400A26812 /* Puppy.swift */,
+			);
+			name = PuppyTableView;
+			sourceTree = "<group>";
+		};
 		D2ECE0321F8EDF8F00F85974 = {
 			isa = PBXGroup;
 			children = (
@@ -59,10 +75,11 @@
 			isa = PBXGroup;
 			children = (
 				D2ECE0501F8EDF9E00F85974 /* Supporting Files */,
+				D2387D901FA5216F00A26812 /* PuppyTableView */,
 				D2ECE0421F8EDF8F00F85974 /* Main.storyboard */,
-				D2ECE0511F8EDFCB00F85974 /* PuppyTableViewController.swift */,
 				D2ECE0531F8EE49900F85974 /* PuppyViewController.swift */,
 				D2ECE0581F8EEB4E00F85974 /* PlayPuppyViewController.swift */,
+				D2387D951FA532E600A26812 /* PuppyData.json */,
 			);
 			path = PuppyAnimation;
 			sourceTree = "<group>";
@@ -151,8 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2ECE0521F8EDFCB00F85974 /* PuppyTableViewController.swift in Sources */,
+				D2387D961FA532E600A26812 /* PuppyData.json in Sources */,
 				D2ECE0541F8EE49900F85974 /* PuppyViewController.swift in Sources */,
 				D2ECE03F1F8EDF8F00F85974 /* AppDelegate.swift in Sources */,
+				D2387D921FA52D0200A26812 /* PuppyTableViewCell.swift in Sources */,
+				D2387D941FA5304400A26812 /* Puppy.swift in Sources */,
 				D2ECE0591F8EEB4E00F85974 /* PlayPuppyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,10 +311,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 557EJSX593;
+				DEVELOPMENT_TEAM = F5B2FDJTCC;
 				INFOPLIST_FILE = PuppyAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = darrel.jiang.monsanto.PuppyAnimation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangdev.PuppyAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,10 +326,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 557EJSX593;
+				DEVELOPMENT_TEAM = F5B2FDJTCC;
 				INFOPLIST_FILE = PuppyAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = darrel.jiang.monsanto.PuppyAnimation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangdev.PuppyAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -4,7 +4,8 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,14 +19,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Puppy Cell" id="dLy-bF-RRu">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Puppy Cell" id="dLy-bF-RRu" customClass="PuppyTableViewCell" customModule="PuppyAnimation" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dLy-bF-RRu" id="JuV-pK-sx6">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puppy1" translatesAutoresizingMaskIntoConstraints="NO" id="4QL-xQ-OLw">
+                                            <rect key="frame" x="8" y="0.0" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="NHI-wl-Z0l"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7w-Pu-mOt">
+                                            <rect key="frame" x="60" y="0.0" width="307" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4QL-xQ-OLw" firstAttribute="top" secondItem="JuV-pK-sx6" secondAttribute="top" id="34q-eo-OsM"/>
+                                        <constraint firstItem="B7w-Pu-mOt" firstAttribute="leading" secondItem="4QL-xQ-OLw" secondAttribute="trailing" constant="8" symbolic="YES" id="D4Z-Q5-iAW"/>
+                                        <constraint firstItem="B7w-Pu-mOt" firstAttribute="trailing" secondItem="JuV-pK-sx6" secondAttribute="trailingMargin" id="LaH-dC-T9y"/>
+                                        <constraint firstItem="4QL-xQ-OLw" firstAttribute="leading" secondItem="JuV-pK-sx6" secondAttribute="leadingMargin" id="O1S-Fr-jtg"/>
+                                        <constraint firstItem="4QL-xQ-OLw" firstAttribute="bottom" secondItem="B7w-Pu-mOt" secondAttribute="bottom" id="UwH-hV-cAy"/>
+                                        <constraint firstItem="4QL-xQ-OLw" firstAttribute="top" secondItem="B7w-Pu-mOt" secondAttribute="top" id="XSU-Iw-cqR"/>
+                                        <constraint firstItem="4QL-xQ-OLw" firstAttribute="centerY" secondItem="JuV-pK-sx6" secondAttribute="centerY" id="gn4-vj-TYQ"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="puppyImageView" destination="4QL-xQ-OLw" id="717-RJ-hdi"/>
+                                    <outlet property="puppyLabel" destination="B7w-Pu-mOt" id="trI-GF-pX3"/>
                                     <segue destination="JWG-ga-Uk7" kind="show" identifier="Puppy Segue" id="Eey-u3-g2y"/>
                                 </connections>
                             </tableViewCell>
@@ -39,7 +65,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j1l-Ae-iUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="442" y="305"/>
+            <point key="canvasLocation" x="440.80000000000001" y="304.4977511244378"/>
         </scene>
         <!--Dog-->
         <scene sceneID="gxA-Tr-Gip">

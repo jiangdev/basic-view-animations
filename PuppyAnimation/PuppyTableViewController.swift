@@ -9,6 +9,7 @@
 import UIKit
 
 class PuppyTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -31,10 +32,10 @@ class PuppyTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Puppy Cell", for: indexPath)
-        cell.textLabel?.text = "Puppy \(indexPath.row+1)"
-
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Puppy Cell", for: indexPath) as? PuppyTableViewCell
+//        cell.textLabel?.text = "Puppy \(indexPath.row+1)"
+        cell?.puppy = Puppy(imageName: "puppy1", name: "puppy")
+        return cell!
     }
  
     func animateTable() {
