@@ -12,6 +12,7 @@ class PlayPuppyViewController: UIViewController {
     let firstImageView = UIImageView.init(image:UIImage.init(named: "puppy1.jpg"))
     let secondImageView = UIImageView.init(image:UIImage.init(named: "puppy12.jpg"))
     var puppySwitch: Bool = false
+    
     @IBOutlet weak var movePuppyButton: UIButton!
     
     @IBOutlet weak var rolloverPuppyButton: UIButton!
@@ -26,12 +27,7 @@ class PlayPuppyViewController: UIViewController {
                 self.firstImageView.alpha = 0
                 self.secondImageView.alpha = 1
             }, completion: nil)
-//            UIView.transition(from: firstImageView, to: secondImageView, duration: 0.33,
-//                              options: .transitionFlipFromRight, completion: nil)
-            
         } else {
-//            UIView.transition(from: secondImageView, to: firstImageView, duration: 0.33,
-//                              options: .transitionCurlDown, completion: nil)
             UIView.animate(withDuration: 2, delay: 0, options: [.curveEaseOut], animations: {
                 self.firstImageView.alpha = 1
                 self.secondImageView.alpha = 0
@@ -41,13 +37,7 @@ class PlayPuppyViewController: UIViewController {
         self.puppySwitch = !self.puppySwitch
     }
     
-    
-    
-    
-//    var count = 1
-    
     @IBAction func movePuppyButtonAction(_ sender: UIButton) {
-        
         UIView.animate(withDuration: 2, delay: 0, options: [.repeat, .autoreverse], animations: {
             self.movePuppyButton.center.x += self.view.bounds.width - self.movePuppyButton.frame.width
         }, completion: nil)
@@ -55,13 +45,10 @@ class PlayPuppyViewController: UIViewController {
     }
     
     @IBAction func rolloverPuppyButtonAction(_ sender: UIButton) {
-        
         UIView.animate(withDuration: 2, delay: 0, options: [.repeat, .autoreverse], animations: {
             self.rolloverPuppyButton.center.x += self.view.bounds.width - self.rolloverPuppyButton.frame.width
             self.rolloverPuppyButton.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 1.5)
-            
-        }, completion: nil
-    )
+        }, completion: nil)
     }
     
     @IBAction func springPuppyButtonAction(_ sender: UIButton) {
@@ -73,15 +60,8 @@ class PlayPuppyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         firstImageView.frame = CGRect.init(x: 0, y: 0, width: 100, height: 100)
@@ -90,8 +70,11 @@ class PlayPuppyViewController: UIViewController {
         transformPuppyView.addSubview(firstImageView)
         transformPuppyView.addSubview(secondImageView)
     }
-    
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -9,19 +9,15 @@
 import UIKit
 
 class PuppyViewController: UIViewController {
-
     let firstImage: UIImage = UIImage.init(named: "puppyA.jpg")!
     let secondImage: UIImage = UIImage.init(named: "puppyB.jpg")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func viewWillAppear(_ animated: Bool) {
