@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iut-V7-jn4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Puppies!-->
+        <scene sceneID="Fz7-l1-jIg">
+            <objects>
+                <tableViewController id="e49-0r-HxJ" customClass="PuppyTableViewController" customModule="PuppyAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OGB-Ti-z8W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Puppy Cell" id="dLy-bF-RRu">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dLy-bF-RRu" id="JuV-pK-sx6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="JWG-ga-Uk7" kind="show" identifier="Puppy Segue" id="Eey-u3-g2y"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="e49-0r-HxJ" id="e8W-bU-Aa2"/>
+                            <outlet property="delegate" destination="e49-0r-HxJ" id="Hd5-Kc-x0f"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Puppies!" id="jQg-x1-EJb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j1l-Ae-iUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442" y="305"/>
+        </scene>
+        <!--Dog-->
+        <scene sceneID="gxA-Tr-Gip">
+            <objects>
+                <viewController id="JWG-ga-Uk7" customClass="PuppyViewController" customModule="PuppyAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ntd-zY-Hqn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0X0-zJ-trr">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0X0-zJ-trr" firstAttribute="leading" secondItem="WIn-Sa-z7w" secondAttribute="leading" id="Bqw-cp-x5a"/>
+                            <constraint firstItem="0X0-zJ-trr" firstAttribute="bottom" secondItem="WIn-Sa-z7w" secondAttribute="bottom" id="NjH-Lb-58Z"/>
+                            <constraint firstItem="0X0-zJ-trr" firstAttribute="trailing" secondItem="WIn-Sa-z7w" secondAttribute="trailing" id="apL-1O-M3z"/>
+                            <constraint firstItem="0X0-zJ-trr" firstAttribute="top" secondItem="WIn-Sa-z7w" secondAttribute="top" id="uNk-Gg-SDN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WIn-Sa-z7w"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dog" id="Dpw-GQ-gmS">
+                        <barButtonItem key="rightBarButtonItem" title="Play" id="bgH-wm-XsO">
+                            <connections>
+                                <segue destination="mn9-o6-P8p" kind="show" id="oQO-ZN-7CJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZFw-gg-HTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453.5999999999999" y="303.59820089955025"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gcI-La-tAF">
+            <objects>
+                <navigationController id="iut-V7-jn4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hcw-Ww-3tM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="e49-0r-HxJ" kind="relationship" relationship="rootViewController" id="X2x-3X-dDz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQh-i5-p2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-512" y="305"/>
+        </scene>
+        <!--Play Puppy View Controller-->
+        <scene sceneID="eXn-aM-2Jw">
+            <objects>
+                <viewController id="mn9-o6-P8p" customClass="PlayPuppyViewController" customModule="PuppyAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dp7-2y-MuE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vge-Ia-sbN">
+                                <rect key="frame" x="0.0" y="99" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="puppy1"/>
+                                <connections>
+                                    <action selector="movePuppyButtonAction:" destination="mn9-o6-P8p" eventType="touchUpInside" id="OYw-VJ-5mt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvC-g6-CiG">
+                                <rect key="frame" x="0.0" y="241" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="puppy1"/>
+                                <connections>
+                                    <action selector="rolloverPuppyButtonAction:" destination="mn9-o6-P8p" eventType="touchUpInside" id="VGE-vy-UYi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkf-cA-8vo">
+                                <rect key="frame" x="0.0" y="379" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="puppy1"/>
+                                <connections>
+                                    <action selector="springPuppyButtonAction:" destination="mn9-o6-P8p" eventType="touchUpInside" id="cWb-eD-8gx"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JDl-m4-Ea2">
+                                <rect key="frame" x="0.0" y="516" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtz-ki-9TX">
+                                <rect key="frame" x="0.0" y="617" width="202" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Transform Puppy"/>
+                                <connections>
+                                    <action selector="transformPuppyButtonAction:" destination="mn9-o6-P8p" eventType="touchUpInside" id="w25-EQ-gaV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="jCj-ux-act"/>
+                    </view>
+                    <connections>
+                        <outlet property="movePuppyButton" destination="vge-Ia-sbN" id="5tY-R6-i3r"/>
+                        <outlet property="rolloverPuppyButton" destination="FvC-g6-CiG" id="UOw-T9-jYd"/>
+                        <outlet property="springPuppyButton" destination="Lkf-cA-8vo" id="wbb-9s-wsi"/>
+                        <outlet property="transformPuppyView" destination="JDl-m4-Ea2" id="OBZ-wf-GNe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q3k-m9-tNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2317.5999999999999" y="303.59820089955025"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="puppy1" width="256" height="256"/>
+    </resources>
+</document>

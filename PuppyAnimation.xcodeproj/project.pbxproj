@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2ECE03F1F8EDF8F00F85974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE03E1F8EDF8F00F85974 /* AppDelegate.swift */; };
+		D2ECE0441F8EDF8F00F85974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ECE0421F8EDF8F00F85974 /* Main.storyboard */; };
+		D2ECE0461F8EDF8F00F85974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2ECE0451F8EDF8F00F85974 /* Assets.xcassets */; };
+		D2ECE0491F8EDF8F00F85974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ECE0471F8EDF8F00F85974 /* LaunchScreen.storyboard */; };
+		D2ECE0521F8EDFCB00F85974 /* PuppyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE0511F8EDFCB00F85974 /* PuppyTableViewController.swift */; };
+		D2ECE0541F8EE49900F85974 /* PuppyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE0531F8EE49900F85974 /* PuppyViewController.swift */; };
+		D2ECE0591F8EEB4E00F85974 /* PlayPuppyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE0581F8EEB4E00F85974 /* PlayPuppyViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D2ECE03B1F8EDF8F00F85974 /* PuppyAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuppyAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2ECE03E1F8EDF8F00F85974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2ECE0431F8EDF8F00F85974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2ECE0451F8EDF8F00F85974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2ECE0481F8EDF8F00F85974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2ECE04A1F8EDF8F00F85974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2ECE0511F8EDFCB00F85974 /* PuppyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyTableViewController.swift; sourceTree = "<group>"; };
+		D2ECE0531F8EE49900F85974 /* PuppyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyViewController.swift; sourceTree = "<group>"; };
+		D2ECE0581F8EEB4E00F85974 /* PlayPuppyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPuppyViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2ECE0381F8EDF8F00F85974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2ECE0321F8EDF8F00F85974 = {
+			isa = PBXGroup;
+			children = (
+				D2ECE03D1F8EDF8F00F85974 /* PuppyAnimation */,
+				D2ECE03C1F8EDF8F00F85974 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2ECE03C1F8EDF8F00F85974 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2ECE03B1F8EDF8F00F85974 /* PuppyAnimation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2ECE03D1F8EDF8F00F85974 /* PuppyAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D2ECE0501F8EDF9E00F85974 /* Supporting Files */,
+				D2ECE0421F8EDF8F00F85974 /* Main.storyboard */,
+				D2ECE0511F8EDFCB00F85974 /* PuppyTableViewController.swift */,
+				D2ECE0531F8EE49900F85974 /* PuppyViewController.swift */,
+				D2ECE0581F8EEB4E00F85974 /* PlayPuppyViewController.swift */,
+			);
+			path = PuppyAnimation;
+			sourceTree = "<group>";
+		};
+		D2ECE0501F8EDF9E00F85974 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2ECE03E1F8EDF8F00F85974 /* AppDelegate.swift */,
+				D2ECE0451F8EDF8F00F85974 /* Assets.xcassets */,
+				D2ECE0471F8EDF8F00F85974 /* LaunchScreen.storyboard */,
+				D2ECE04A1F8EDF8F00F85974 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2ECE03A1F8EDF8F00F85974 /* PuppyAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2ECE04D1F8EDF8F00F85974 /* Build configuration list for PBXNativeTarget "PuppyAnimation" */;
+			buildPhases = (
+				D2ECE0371F8EDF8F00F85974 /* Sources */,
+				D2ECE0381F8EDF8F00F85974 /* Frameworks */,
+				D2ECE0391F8EDF8F00F85974 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PuppyAnimation;
+			productName = PuppyAnimation;
+			productReference = D2ECE03B1F8EDF8F00F85974 /* PuppyAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2ECE0331F8EDF8F00F85974 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "JIANG, DARREL [AG/1000]";
+				TargetAttributes = {
+					D2ECE03A1F8EDF8F00F85974 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D2ECE0361F8EDF8F00F85974 /* Build configuration list for PBXProject "PuppyAnimation" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2ECE0321F8EDF8F00F85974;
+			productRefGroup = D2ECE03C1F8EDF8F00F85974 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2ECE03A1F8EDF8F00F85974 /* PuppyAnimation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2ECE0391F8EDF8F00F85974 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2ECE0491F8EDF8F00F85974 /* LaunchScreen.storyboard in Resources */,
+				D2ECE0461F8EDF8F00F85974 /* Assets.xcassets in Resources */,
+				D2ECE0441F8EDF8F00F85974 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2ECE0371F8EDF8F00F85974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2ECE0521F8EDFCB00F85974 /* PuppyTableViewController.swift in Sources */,
+				D2ECE0541F8EE49900F85974 /* PuppyViewController.swift in Sources */,
+				D2ECE03F1F8EDF8F00F85974 /* AppDelegate.swift in Sources */,
+				D2ECE0591F8EEB4E00F85974 /* PlayPuppyViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2ECE0421F8EDF8F00F85974 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2ECE0431F8EDF8F00F85974 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2ECE0471F8EDF8F00F85974 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2ECE0481F8EDF8F00F85974 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2ECE04B1F8EDF8F00F85974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2ECE04C1F8EDF8F00F85974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2ECE04E1F8EDF8F00F85974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 557EJSX593;
+				INFOPLIST_FILE = PuppyAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = darrel.jiang.monsanto.PuppyAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2ECE04F1F8EDF8F00F85974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 557EJSX593;
+				INFOPLIST_FILE = PuppyAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = darrel.jiang.monsanto.PuppyAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2ECE0361F8EDF8F00F85974 /* Build configuration list for PBXProject "PuppyAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2ECE04B1F8EDF8F00F85974 /* Debug */,
+				D2ECE04C1F8EDF8F00F85974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2ECE04D1F8EDF8F00F85974 /* Build configuration list for PBXNativeTarget "PuppyAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2ECE04E1F8EDF8F00F85974 /* Debug */,
+				D2ECE04F1F8EDF8F00F85974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2ECE0331F8EDF8F00F85974 /* Project object */;
+}
