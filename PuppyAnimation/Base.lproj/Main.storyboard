@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,19 +13,43 @@
         <scene sceneID="Fz7-l1-jIg">
             <objects>
                 <tableViewController id="e49-0r-HxJ" customClass="PuppyTableViewController" customModule="PuppyAnimation" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OGB-Ti-z8W">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OGB-Ti-z8W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Puppy Cell" id="dLy-bF-RRu">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Puppy Cell" rowHeight="60" id="dLy-bF-RRu" customClass="PuppyTableViewCell" customModule="PuppyAnimation" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dLy-bF-RRu" id="JuV-pK-sx6">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puppy1" translatesAutoresizingMaskIntoConstraints="NO" id="4QL-xQ-OLw">
+                                            <rect key="frame" x="8" y="0.0" width="60" height="60"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7w-Pu-mOt">
+                                            <rect key="frame" x="83" y="8" width="284" height="52"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="B7w-Pu-mOt" secondAttribute="trailing" constant="8" id="206-tv-zle"/>
+                                        <constraint firstItem="B7w-Pu-mOt" firstAttribute="top" secondItem="JuV-pK-sx6" secondAttribute="top" constant="8" id="BfV-Ac-Hez"/>
+                                        <constraint firstAttribute="bottom" secondItem="B7w-Pu-mOt" secondAttribute="bottom" constant="-0.5" id="HCC-IR-Zz1"/>
+                                        <constraint firstAttribute="bottom" secondItem="4QL-xQ-OLw" secondAttribute="bottom" constant="-0.5" id="IYR-Xt-fqP"/>
+                                        <constraint firstAttribute="trailing" secondItem="4QL-xQ-OLw" secondAttribute="trailing" constant="307" id="KP4-WJ-9Fe"/>
+                                        <constraint firstItem="4QL-xQ-OLw" firstAttribute="leading" secondItem="JuV-pK-sx6" secondAttribute="leading" constant="8" id="Ydt-wq-Ffg"/>
+                                        <constraint firstItem="B7w-Pu-mOt" firstAttribute="leading" secondItem="JuV-pK-sx6" secondAttribute="leading" constant="83" id="a8h-jg-kir"/>
+                                        <constraint firstItem="B7w-Pu-mOt" firstAttribute="leading" secondItem="4QL-xQ-OLw" secondAttribute="trailing" constant="15" id="e9E-8w-IF4"/>
+                                        <constraint firstItem="4QL-xQ-OLw" firstAttribute="top" secondItem="JuV-pK-sx6" secondAttribute="top" id="k5Y-vp-xV4"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="puppyImageView" destination="4QL-xQ-OLw" id="717-RJ-hdi"/>
+                                    <outlet property="puppyLabel" destination="B7w-Pu-mOt" id="trI-GF-pX3"/>
                                     <segue destination="JWG-ga-Uk7" kind="show" identifier="Puppy Segue" id="Eey-u3-g2y"/>
                                 </connections>
                             </tableViewCell>
@@ -39,12 +63,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j1l-Ae-iUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="442" y="305"/>
+            <point key="canvasLocation" x="440.80000000000001" y="304.4977511244378"/>
         </scene>
         <!--Dog-->
         <scene sceneID="gxA-Tr-Gip">
             <objects>
-                <viewController id="JWG-ga-Uk7" customClass="PuppyViewController" customModule="PuppyAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JWG-ga-Uk7" customClass="PuppyPictureViewController" customModule="PuppyAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ntd-zY-Hqn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,6 +176,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="puppy1" width="256" height="256"/>
+        <image name="puppy1" width="512" height="512"/>
     </resources>
 </document>

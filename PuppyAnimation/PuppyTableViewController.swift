@@ -9,8 +9,11 @@
 import UIKit
 
 class PuppyTableViewController: UITableViewController {
+    private var puppyModel: PuppyModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        puppyModel = PuppyModel()
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,14 +30,14 @@ class PuppyTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return puppyModel.puppies.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Puppy Cell", for: indexPath)
-        cell.textLabel?.text = "Puppy \(indexPath.row+1)"
-
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Puppy Cell", for: indexPath) as? PuppyTableViewCell
+//        cell.textLabel?.text = "Puppy \(indexPath.row+1)"
+        cell?.puppy = puppyModel.puppies[indexPath.row]
+        return cell!
     }
  
     func animateTable() {
@@ -58,6 +61,15 @@ class PuppyTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        if segue.identifier == "Puppy Segue",
+            let destination = segue.destination as? PuppyPictureViewController,
+            let puppyIndex = self.tableView.indexPathForSelectedRow {
+            destination.puppy = self.puppyModel.puppies[puppyIndex.row]
+        }
     }
 }
+
+
+
+
+
