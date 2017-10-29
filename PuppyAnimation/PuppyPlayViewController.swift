@@ -8,18 +8,27 @@
 
 import UIKit
 
-class PlayPuppyViewController: UIViewController {
-    let firstImageView = UIImageView.init(image:UIImage.init(named: "puppy1.jpg"))
-    let secondImageView = UIImageView.init(image:UIImage.init(named: "puppy12.jpg"))
+class PuppyPlayViewController: UIViewController {
+    var firstImageView: UIImageView!
+    var secondImageView: UIImageView!
+    var puppy: Puppy!
     var puppySwitch: Bool = false
     
     @IBOutlet weak var movePuppyButton: UIButton!
-    
     @IBOutlet weak var rolloverPuppyButton: UIButton!
-    
     @IBOutlet weak var springPuppyButton: UIButton!
-    
     @IBOutlet weak var transformPuppyView: UIView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        firstImageView = UIImageView.init(image:UIImage.init(named: puppy.imageName))
+        secondImageView = UIImageView.init(image:UIImage.init(named: "fry"))
+        
+        movePuppyButton.setBackgroundImage(UIImage.init(named: puppy.imageName), for: .normal)
+        rolloverPuppyButton.setBackgroundImage(UIImage.init(named: puppy.imageName), for: .normal)
+        springPuppyButton.setBackgroundImage(UIImage.init(named: puppy.imageName), for: .normal)
+        
+    }
     
     @IBAction func transformPuppyButtonAction(_ sender: UIButton) {
         if (self.puppySwitch) {
@@ -55,11 +64,6 @@ class PlayPuppyViewController: UIViewController {
         UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping:0.1, initialSpringVelocity: 2, options: [.repeat, .autoreverse], animations: {
             self.springPuppyButton.center.x += self.view.bounds.width - self.springPuppyButton.frame.width
         }, completion: nil)
-    }
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
 
     override func viewWillAppear(_ animated: Bool) {

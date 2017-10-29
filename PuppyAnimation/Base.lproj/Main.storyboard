@@ -29,14 +29,13 @@
                                             <rect key="frame" x="8" y="0.0" width="60" height="60"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7w-Pu-mOt">
-                                            <rect key="frame" x="76" y="0.0" width="42" height="60"/>
+                                            <rect key="frame" x="76" y="0.0" width="291" height="60"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="4QL-xQ-OLw" secondAttribute="trailing" constant="599" id="3Na-j8-m9p"/>
                                         <constraint firstAttribute="trailing" secondItem="B7w-Pu-mOt" secondAttribute="trailing" constant="8" id="9dP-7b-JM3"/>
                                         <constraint firstItem="4QL-xQ-OLw" firstAttribute="leading" secondItem="JuV-pK-sx6" secondAttribute="leading" constant="8" id="Bl4-Gn-Wp5"/>
                                         <constraint firstItem="4QL-xQ-OLw" firstAttribute="top" secondItem="JuV-pK-sx6" secondAttribute="top" id="Bpk-Rb-0Xk"/>
@@ -93,7 +92,7 @@
                     <navigationItem key="navigationItem" title="Dog" id="Dpw-GQ-gmS">
                         <barButtonItem key="rightBarButtonItem" title="Play" id="bgH-wm-XsO">
                             <connections>
-                                <segue destination="mn9-o6-P8p" kind="show" id="oQO-ZN-7CJ"/>
+                                <segue destination="mn9-o6-P8p" kind="show" identifier="Puppy Play Segue" id="oQO-ZN-7CJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -118,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="-512" y="305"/>
         </scene>
-        <!--Play Puppy View Controller-->
+        <!--Puppy Play View Controller-->
         <scene sceneID="eXn-aM-2Jw">
             <objects>
-                <viewController id="mn9-o6-P8p" customClass="PlayPuppyViewController" customModule="PuppyAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mn9-o6-P8p" customClass="PuppyPlayViewController" customModule="PuppyAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dp7-2y-MuE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
