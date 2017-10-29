@@ -8,12 +8,16 @@
 
 import UIKit
 
-class PuppyViewController: UIViewController {
-    let firstImage: UIImage = UIImage.init(named: "puppyA.jpg")!
-    let secondImage: UIImage = UIImage.init(named: "puppyB.jpg")!
+class PuppyPictureViewController: UIViewController {
+    var firstImage: UIImage!
+    var secondImage: UIImage!
+    
+    var puppy: Puppy!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        firstImage = UIImage.init(named: puppy.imageName)
+        secondImage = UIImage.init(named: "puppyB")
     }
 
     override func didReceiveMemoryWarning() {

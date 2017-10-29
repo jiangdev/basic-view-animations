@@ -9,7 +9,6 @@
 import UIKit
 
 class PuppyTableViewController: UITableViewController {
-
     private var puppyModel: PuppyModel!
     
     override func viewDidLoad() {
@@ -62,6 +61,15 @@ class PuppyTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        if segue.identifier == "Puppy Segue",
+            let destination = segue.destination as? PuppyPictureViewController,
+            let puppyIndex = self.tableView.indexPathForSelectedRow {
+            destination.puppy = self.puppyModel.puppies[puppyIndex.row]
+        }
     }
 }
+
+
+
+
+

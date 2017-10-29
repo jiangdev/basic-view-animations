@@ -17,7 +17,7 @@
 		D2ECE0461F8EDF8F00F85974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2ECE0451F8EDF8F00F85974 /* Assets.xcassets */; };
 		D2ECE0491F8EDF8F00F85974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ECE0471F8EDF8F00F85974 /* LaunchScreen.storyboard */; };
 		D2ECE0521F8EDFCB00F85974 /* PuppyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE0511F8EDFCB00F85974 /* PuppyTableViewController.swift */; };
-		D2ECE0541F8EE49900F85974 /* PuppyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE0531F8EE49900F85974 /* PuppyViewController.swift */; };
+		D2ECE0541F8EE49900F85974 /* PuppyPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE0531F8EE49900F85974 /* PuppyPictureViewController.swift */; };
 		D2ECE0591F8EEB4E00F85974 /* PlayPuppyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE0581F8EEB4E00F85974 /* PlayPuppyViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +33,7 @@
 		D2ECE0481F8EDF8F00F85974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2ECE04A1F8EDF8F00F85974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2ECE0511F8EDFCB00F85974 /* PuppyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyTableViewController.swift; sourceTree = "<group>"; };
-		D2ECE0531F8EE49900F85974 /* PuppyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyViewController.swift; sourceTree = "<group>"; };
+		D2ECE0531F8EE49900F85974 /* PuppyPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyPictureViewController.swift; sourceTree = "<group>"; };
 		D2ECE0581F8EEB4E00F85974 /* PlayPuppyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPuppyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +59,14 @@
 			name = PuppyTableView;
 			sourceTree = "<group>";
 		};
+		D2387D9A1FA574C000A26812 /* PuppyPictureView */ = {
+			isa = PBXGroup;
+			children = (
+				D2ECE0531F8EE49900F85974 /* PuppyPictureViewController.swift */,
+			);
+			name = PuppyPictureView;
+			sourceTree = "<group>";
+		};
 		D2ECE0321F8EDF8F00F85974 = {
 			isa = PBXGroup;
 			children = (
@@ -80,8 +88,8 @@
 			children = (
 				D2ECE0501F8EDF9E00F85974 /* Supporting Files */,
 				D2387D901FA5216F00A26812 /* PuppyTableView */,
+				D2387D9A1FA574C000A26812 /* PuppyPictureView */,
 				D2ECE0421F8EDF8F00F85974 /* Main.storyboard */,
-				D2ECE0531F8EE49900F85974 /* PuppyViewController.swift */,
 				D2ECE0581F8EEB4E00F85974 /* PlayPuppyViewController.swift */,
 				D2387D951FA532E600A26812 /* Puppies.json */,
 			);
@@ -175,7 +183,7 @@
 				D2ECE0521F8EDFCB00F85974 /* PuppyTableViewController.swift in Sources */,
 				D2387D961FA532E600A26812 /* Puppies.json in Sources */,
 				D2387D981FA5366F00A26812 /* PuppyModel.swift in Sources */,
-				D2ECE0541F8EE49900F85974 /* PuppyViewController.swift in Sources */,
+				D2ECE0541F8EE49900F85974 /* PuppyPictureViewController.swift in Sources */,
 				D2ECE03F1F8EDF8F00F85974 /* AppDelegate.swift in Sources */,
 				D2387D921FA52D0200A26812 /* PuppyTableViewCell.swift in Sources */,
 				D2387D941FA5304400A26812 /* Puppy.swift in Sources */,

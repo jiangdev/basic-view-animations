@@ -68,7 +68,7 @@
         <!--Dog-->
         <scene sceneID="gxA-Tr-Gip">
             <objects>
-                <viewController id="JWG-ga-Uk7" customClass="PuppyViewController" customModule="PuppyAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JWG-ga-Uk7" customClass="PuppyPictureViewController" customModule="PuppyAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ntd-zY-Hqn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,6 +176,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="puppy1" width="256" height="256"/>
+        <image name="puppy1" width="512" height="512"/>
     </resources>
 </document>

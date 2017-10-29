@@ -9,7 +9,6 @@
 import UIKit
 
 class PuppyTableViewCell: UITableViewCell {
-
     @IBOutlet weak var puppyImageView: UIImageView!
     @IBOutlet weak var puppyLabel: UILabel!
     
