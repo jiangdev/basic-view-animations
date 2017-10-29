@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iut-V7-jn4">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,22 +14,22 @@
             <objects>
                 <tableViewController id="e49-0r-HxJ" customClass="PuppyTableViewController" customModule="PuppyAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OGB-Ti-z8W">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Puppy Cell" rowHeight="60" id="dLy-bF-RRu" customClass="PuppyTableViewCell" customModule="PuppyAnimation" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="667" height="60"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dLy-bF-RRu" id="JuV-pK-sx6">
-                                    <rect key="frame" x="0.0" y="0.0" width="667" height="59.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puppy1" translatesAutoresizingMaskIntoConstraints="NO" id="4QL-xQ-OLw">
                                             <rect key="frame" x="8" y="0.0" width="60" height="60"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7w-Pu-mOt">
-                                            <rect key="frame" x="76" y="0.0" width="583" height="60"/>
+                                            <rect key="frame" x="76" y="0.0" width="42" height="60"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -70,18 +70,22 @@
             <objects>
                 <viewController id="JWG-ga-Uk7" customClass="PuppyPictureViewController" customModule="PuppyAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ntd-zY-Hqn">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0X0-zJ-trr">
-                                <rect key="frame" x="0.0" y="32" width="667" height="343"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0X0-zJ-trr" firstAttribute="leading" secondItem="WIn-Sa-z7w" secondAttribute="leading" id="Bqw-cp-x5a"/>
+                            <constraint firstItem="0X0-zJ-trr" firstAttribute="bottom" secondItem="WIn-Sa-z7w" secondAttribute="bottom" id="CmX-Ua-NqH"/>
+                            <constraint firstItem="0X0-zJ-trr" firstAttribute="top" secondItem="WIn-Sa-z7w" secondAttribute="top" id="MXa-ms-2fb"/>
                             <constraint firstItem="0X0-zJ-trr" firstAttribute="bottom" secondItem="WIn-Sa-z7w" secondAttribute="bottom" id="NjH-Lb-58Z"/>
                             <constraint firstItem="0X0-zJ-trr" firstAttribute="trailing" secondItem="WIn-Sa-z7w" secondAttribute="trailing" id="apL-1O-M3z"/>
+                            <constraint firstItem="0X0-zJ-trr" firstAttribute="trailing" secondItem="WIn-Sa-z7w" secondAttribute="trailing" id="apN-ra-m5D"/>
+                            <constraint firstItem="0X0-zJ-trr" firstAttribute="leading" secondItem="WIn-Sa-z7w" secondAttribute="leading" id="ld3-CC-7vs"/>
                             <constraint firstItem="0X0-zJ-trr" firstAttribute="top" secondItem="WIn-Sa-z7w" secondAttribute="top" id="uNk-Gg-SDN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WIn-Sa-z7w"/>
@@ -103,7 +107,7 @@
             <objects>
                 <navigationController id="iut-V7-jn4" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hcw-Ww-3tM">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -119,7 +123,7 @@
             <objects>
                 <viewController id="mn9-o6-P8p" customClass="PlayPuppyViewController" customModule="PuppyAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dp7-2y-MuE">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vge-Ia-sbN">
