@@ -11,6 +11,7 @@
 		D2387D941FA5304400A26812 /* Puppy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2387D931FA5304400A26812 /* Puppy.swift */; };
 		D2387D981FA5366F00A26812 /* PuppyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2387D971FA5366F00A26812 /* PuppyModel.swift */; };
 		D2387D991FA5712E00A26812 /* Puppies.json in Resources */ = {isa = PBXBuildFile; fileRef = D2387D951FA532E600A26812 /* Puppies.json */; };
+		D2D960241FA65C690069657E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D960231FA65C690069657E /* Constants.swift */; };
 		D2ECE03F1F8EDF8F00F85974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE03E1F8EDF8F00F85974 /* AppDelegate.swift */; };
 		D2ECE0441F8EDF8F00F85974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ECE0421F8EDF8F00F85974 /* Main.storyboard */; };
 		D2ECE0461F8EDF8F00F85974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2ECE0451F8EDF8F00F85974 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		D2387D931FA5304400A26812 /* Puppy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puppy.swift; sourceTree = "<group>"; };
 		D2387D951FA532E600A26812 /* Puppies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Puppies.json; sourceTree = "<group>"; };
 		D2387D971FA5366F00A26812 /* PuppyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyModel.swift; sourceTree = "<group>"; };
+		D2D960231FA65C690069657E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D2ECE03B1F8EDF8F00F85974 /* PuppyAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuppyAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2ECE03E1F8EDF8F00F85974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2ECE0431F8EDF8F00F85974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				D2387D951FA532E600A26812 /* Puppies.json */,
+				D2D960231FA65C690069657E /* Constants.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				D2387D921FA52D0200A26812 /* PuppyTableViewCell.swift in Sources */,
 				D2387D941FA5304400A26812 /* Puppy.swift in Sources */,
 				D2ECE0591F8EEB4E00F85974 /* PuppyPlayViewController.swift in Sources */,
+				D2D960241FA65C690069657E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
