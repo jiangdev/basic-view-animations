@@ -17,7 +17,7 @@ class PuppyPictureViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         firstImage = UIImage.init(named: puppy.imageName)
-        secondImage = UIImage.init(named: "puppyB")
+        secondImage = UIImage.init(named: "fry")
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,14 +41,17 @@ class PuppyPictureViewController: UIViewController {
         }, completion: nil)
     }
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "Puppy Play Segue",
+            let destination = segue.destination as? PuppyPlayViewController {
+            destination.navigationItem.title = "Play with \(puppy.name)"
+            destination.puppy = puppy 
+        }
     }
-    */
-
 }
+
+
+
+
+
