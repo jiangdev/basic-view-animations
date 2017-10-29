@@ -1,11 +1,3 @@
-//
-//  PlayPuppyViewController.swift
-//  PuppyAnimation
-//
-//  Created by JIANG, DARREL [AG/1000] on 10/11/17.
-//  Copyright © 2017 JIANG, DARREL [AG/1000]. All rights reserved.
-//
-
 import UIKit
 
 class PuppyPlayViewController: UIViewController {
@@ -77,15 +69,4 @@ class PuppyPlayViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

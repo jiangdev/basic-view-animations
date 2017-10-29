@@ -1,11 +1,3 @@
-//
-//  PuppyViewController.swift
-//  PuppyAnimation
-//
-//  Created by JIANG, DARREL [AG/1000] on 10/11/17.
-//  Copyright © 2017 JIANG, DARREL [AG/1000]. All rights reserved.
-//
-
 import UIKit
 
 class PuppyPictureViewController: UIViewController {
@@ -42,8 +34,9 @@ class PuppyPictureViewController: UIViewController {
     }
 
     // MARK: - Navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Puppy Play Segue",
+        if segue.identifier == Constants.puppyPlaySegue,
             let destination = segue.destination as? PuppyPlayViewController {
             destination.navigationItem.title = "Play with \(puppy.name)"
             destination.puppy = puppy 

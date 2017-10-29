@@ -1,11 +1,3 @@
-//
-//  PuppyTableViewController.swift
-//  PuppyAnimation
-//
-//  Created by JIANG, DARREL [AG/1000] on 10/11/17.
-//  Copyright © 2017 JIANG, DARREL [AG/1000]. All rights reserved.
-//
-
 import UIKit
 
 class PuppyTableViewController: UITableViewController {
@@ -18,7 +10,6 @@ class PuppyTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
@@ -29,13 +20,11 @@ class PuppyTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return puppyModel.puppies.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Puppy Cell", for: indexPath) as? PuppyTableViewCell
-//        cell.textLabel?.text = "Puppy \(indexPath.row+1)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.puppyTableViewCell, for: indexPath) as? PuppyTableViewCell
         cell?.puppy = puppyModel.puppies[indexPath.row]
         return cell!
     }
@@ -58,9 +47,9 @@ class PuppyTableViewController: UITableViewController {
     }
     
     // MARK: - Navigation
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Puppy Segue",
+        if segue.identifier == Constants.puppyPictureSegue,
             let destination = segue.destination as? PuppyPictureViewController,
             let puppyIndex = self.tableView.indexPathForSelectedRow {
             let destinationPuppy = self.puppyModel.puppies[puppyIndex.row]
