@@ -1,6 +1,8 @@
 import Foundation
 
 struct Constants {
-    static let puppySegue = "Puppy Segue"
-    
+    static let puppyPictureSegue = "Puppy Picture Segue"
+    static let puppyPlaySegue = "Puppy Play Segue"
+    static let puppyTableViewCell = "Puppy Table View Cell"
+    static let puppyJsonFileName = "Puppies"
 }

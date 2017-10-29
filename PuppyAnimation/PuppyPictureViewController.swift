@@ -36,7 +36,7 @@ class PuppyPictureViewController: UIViewController {
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Puppy Play Segue",
+        if segue.identifier == Constants.puppyPlaySegue,
             let destination = segue.destination as? PuppyPlayViewController {
             destination.navigationItem.title = "Play with \(puppy.name)"
             destination.puppy = puppy 

@@ -8,7 +8,7 @@ class PuppyModel {
     }
     
     private func retrieveAllPuppies() -> [Puppy] {
-        let puppyURL = Bundle.main.url(forResource: "Puppies", withExtension: "json")
+        let puppyURL = Bundle.main.url(forResource: Constants.puppyJsonFileName, withExtension: "json")
             let puppyData = try? Data(contentsOf: puppyURL!)
             let puppies = try! JSONDecoder().decode([Puppy].self, from: puppyData!)
 

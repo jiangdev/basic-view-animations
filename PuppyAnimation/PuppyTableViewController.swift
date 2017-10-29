@@ -24,7 +24,7 @@ class PuppyTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Puppy Cell", for: indexPath) as? PuppyTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.puppyTableViewCell, for: indexPath) as? PuppyTableViewCell
         cell?.puppy = puppyModel.puppies[indexPath.row]
         return cell!
     }
@@ -49,7 +49,7 @@ class PuppyTableViewController: UITableViewController {
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Puppy Segue",
+        if segue.identifier == Constants.puppyPictureSegue,
             let destination = segue.destination as? PuppyPictureViewController,
             let puppyIndex = self.tableView.indexPathForSelectedRow {
             let destinationPuppy = self.puppyModel.puppies[puppyIndex.row]
