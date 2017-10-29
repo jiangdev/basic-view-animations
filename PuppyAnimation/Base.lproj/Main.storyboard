@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Puppy Cell" rowHeight="60" id="dLy-bF-RRu" customClass="PuppyTableViewCell" customModule="PuppyAnimation" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Puppy Table View Cell" rowHeight="60" id="dLy-bF-RRu" customClass="PuppyTableViewCell" customModule="PuppyAnimation" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dLy-bF-RRu" id="JuV-pK-sx6">
@@ -50,7 +50,7 @@
                                 <connections>
                                     <outlet property="puppyImageView" destination="4QL-xQ-OLw" id="717-RJ-hdi"/>
                                     <outlet property="puppyLabel" destination="B7w-Pu-mOt" id="trI-GF-pX3"/>
-                                    <segue destination="JWG-ga-Uk7" kind="show" identifier="Puppy Segue" id="Eey-u3-g2y"/>
+                                    <segue destination="JWG-ga-Uk7" kind="show" identifier="Puppy Picture Segue" id="Eey-u3-g2y"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
