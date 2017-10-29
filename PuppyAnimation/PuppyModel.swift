@@ -17,12 +17,11 @@ class PuppyModel {
     }
     
     private func retrieveAllPuppies() -> [Puppy] {
-        guard let puppyURL = Bundle.main.url(forResource: "Puppies", withExtension: "json"),
-            let puppyData = try? Data(contentsOf: puppyURL),
-            let puppies = try? JSONDecoder().decode([Puppy].self, from: puppyData)
-        else {
-            return []
-        }
+        
+        let puppyURL = Bundle.main.url(forResource: "Puppies", withExtension: "json")
+            let puppyData = try? Data(contentsOf: puppyURL!)
+            let puppies = try! JSONDecoder().decode([Puppy].self, from: puppyData!)
+
         return puppies
     }
 }

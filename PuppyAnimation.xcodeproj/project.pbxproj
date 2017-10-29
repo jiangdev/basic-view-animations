@@ -11,6 +11,7 @@
 		D2387D941FA5304400A26812 /* Puppy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2387D931FA5304400A26812 /* Puppy.swift */; };
 		D2387D961FA532E600A26812 /* Puppies.json in Sources */ = {isa = PBXBuildFile; fileRef = D2387D951FA532E600A26812 /* Puppies.json */; };
 		D2387D981FA5366F00A26812 /* PuppyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2387D971FA5366F00A26812 /* PuppyModel.swift */; };
+		D2387D991FA5712E00A26812 /* Puppies.json in Resources */ = {isa = PBXBuildFile; fileRef = D2387D951FA532E600A26812 /* Puppies.json */; };
 		D2ECE03F1F8EDF8F00F85974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE03E1F8EDF8F00F85974 /* AppDelegate.swift */; };
 		D2ECE0441F8EDF8F00F85974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ECE0421F8EDF8F00F85974 /* Main.storyboard */; };
 		D2ECE0461F8EDF8F00F85974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2ECE0451F8EDF8F00F85974 /* Assets.xcassets */; };
@@ -157,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2387D991FA5712E00A26812 /* Puppies.json in Resources */,
 				D2ECE0491F8EDF8F00F85974 /* LaunchScreen.storyboard in Resources */,
 				D2ECE0461F8EDF8F00F85974 /* Assets.xcassets in Resources */,
 				D2ECE0441F8EDF8F00F85974 /* Main.storyboard in Resources */,

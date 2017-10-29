@@ -9,6 +9,6 @@
 import Foundation
 
 struct Puppy : Codable {
-    let imageName: String
-    let name: String
+    var imageName: String
+    var name: String
 }

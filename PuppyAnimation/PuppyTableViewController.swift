@@ -15,7 +15,6 @@ class PuppyTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         puppyModel = PuppyModel()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,18 +26,18 @@ class PuppyTableViewController: UITableViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        self.animateTable()
+        self.animateTable()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return puppyModel.puppies.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Puppy Cell", for: indexPath) as? PuppyTableViewCell
 //        cell.textLabel?.text = "Puppy \(indexPath.row+1)"
-        cell?.puppy = Puppy(imageName: "puppy1", name: "puppy")
+        cell?.puppy = puppyModel.puppies[indexPath.row]
         return cell!
     }
  
