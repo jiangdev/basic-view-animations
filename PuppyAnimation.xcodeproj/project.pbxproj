@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D2387D921FA52D0200A26812 /* PuppyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2387D911FA52D0200A26812 /* PuppyTableViewCell.swift */; };
 		D2387D941FA5304400A26812 /* Puppy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2387D931FA5304400A26812 /* Puppy.swift */; };
-		D2387D961FA532E600A26812 /* Puppies.json in Sources */ = {isa = PBXBuildFile; fileRef = D2387D951FA532E600A26812 /* Puppies.json */; };
 		D2387D981FA5366F00A26812 /* PuppyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2387D971FA5366F00A26812 /* PuppyModel.swift */; };
 		D2387D991FA5712E00A26812 /* Puppies.json in Resources */ = {isa = PBXBuildFile; fileRef = D2387D951FA532E600A26812 /* Puppies.json */; };
 		D2ECE03F1F8EDF8F00F85974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE03E1F8EDF8F00F85974 /* AppDelegate.swift */; };
@@ -18,7 +17,7 @@
 		D2ECE0491F8EDF8F00F85974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ECE0471F8EDF8F00F85974 /* LaunchScreen.storyboard */; };
 		D2ECE0521F8EDFCB00F85974 /* PuppyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE0511F8EDFCB00F85974 /* PuppyTableViewController.swift */; };
 		D2ECE0541F8EE49900F85974 /* PuppyPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE0531F8EE49900F85974 /* PuppyPictureViewController.swift */; };
-		D2ECE0591F8EEB4E00F85974 /* PlayPuppyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE0581F8EEB4E00F85974 /* PlayPuppyViewController.swift */; };
+		D2ECE0591F8EEB4E00F85974 /* PuppyPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ECE0581F8EEB4E00F85974 /* PuppyPlayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +33,7 @@
 		D2ECE04A1F8EDF8F00F85974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2ECE0511F8EDFCB00F85974 /* PuppyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyTableViewController.swift; sourceTree = "<group>"; };
 		D2ECE0531F8EE49900F85974 /* PuppyPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyPictureViewController.swift; sourceTree = "<group>"; };
-		D2ECE0581F8EEB4E00F85974 /* PlayPuppyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPuppyViewController.swift; sourceTree = "<group>"; };
+		D2ECE0581F8EEB4E00F85974 /* PuppyPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyPlayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +66,22 @@
 			name = PuppyPictureView;
 			sourceTree = "<group>";
 		};
+		D23B4A091FA5A49B00B73AB8 /* PuppyPlayView */ = {
+			isa = PBXGroup;
+			children = (
+				D2ECE0581F8EEB4E00F85974 /* PuppyPlayViewController.swift */,
+			);
+			name = PuppyPlayView;
+			sourceTree = "<group>";
+		};
+		D23B4A0A1FA5A4B900B73AB8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2387D951FA532E600A26812 /* Puppies.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		D2ECE0321F8EDF8F00F85974 = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +104,9 @@
 				D2ECE0501F8EDF9E00F85974 /* Supporting Files */,
 				D2387D901FA5216F00A26812 /* PuppyTableView */,
 				D2387D9A1FA574C000A26812 /* PuppyPictureView */,
+				D23B4A091FA5A49B00B73AB8 /* PuppyPlayView */,
+				D23B4A0A1FA5A4B900B73AB8 /* Resources */,
 				D2ECE0421F8EDF8F00F85974 /* Main.storyboard */,
-				D2ECE0581F8EEB4E00F85974 /* PlayPuppyViewController.swift */,
-				D2387D951FA532E600A26812 /* Puppies.json */,
 			);
 			path = PuppyAnimation;
 			sourceTree = "<group>";
@@ -181,13 +196,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2ECE0521F8EDFCB00F85974 /* PuppyTableViewController.swift in Sources */,
-				D2387D961FA532E600A26812 /* Puppies.json in Sources */,
 				D2387D981FA5366F00A26812 /* PuppyModel.swift in Sources */,
 				D2ECE0541F8EE49900F85974 /* PuppyPictureViewController.swift in Sources */,
 				D2ECE03F1F8EDF8F00F85974 /* AppDelegate.swift in Sources */,
 				D2387D921FA52D0200A26812 /* PuppyTableViewCell.swift in Sources */,
 				D2387D941FA5304400A26812 /* Puppy.swift in Sources */,
-				D2ECE0591F8EEB4E00F85974 /* PlayPuppyViewController.swift in Sources */,
+				D2ECE0591F8EEB4E00F85974 /* PuppyPlayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
