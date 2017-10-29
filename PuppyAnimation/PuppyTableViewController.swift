@@ -10,8 +10,12 @@ import UIKit
 
 class PuppyTableViewController: UITableViewController {
 
+    private var puppyModel: PuppyModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        puppyModel = PuppyModel()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +27,7 @@ class PuppyTableViewController: UITableViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.animateTable()
+//        self.animateTable()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

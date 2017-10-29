@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,39 +13,38 @@
         <scene sceneID="Fz7-l1-jIg">
             <objects>
                 <tableViewController id="e49-0r-HxJ" customClass="PuppyTableViewController" customModule="PuppyAnimation" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OGB-Ti-z8W">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OGB-Ti-z8W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Puppy Cell" id="dLy-bF-RRu" customClass="PuppyTableViewCell" customModule="PuppyAnimation" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Puppy Cell" rowHeight="60" id="dLy-bF-RRu" customClass="PuppyTableViewCell" customModule="PuppyAnimation" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dLy-bF-RRu" id="JuV-pK-sx6">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puppy1" translatesAutoresizingMaskIntoConstraints="NO" id="4QL-xQ-OLw">
-                                            <rect key="frame" x="8" y="0.0" width="44" height="44"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="44" id="NHI-wl-Z0l"/>
-                                            </constraints>
+                                            <rect key="frame" x="8" y="0.0" width="60" height="60"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7w-Pu-mOt">
-                                            <rect key="frame" x="60" y="0.0" width="307" height="44"/>
+                                            <rect key="frame" x="83" y="8" width="284" height="52"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="4QL-xQ-OLw" firstAttribute="top" secondItem="JuV-pK-sx6" secondAttribute="top" id="34q-eo-OsM"/>
-                                        <constraint firstItem="B7w-Pu-mOt" firstAttribute="leading" secondItem="4QL-xQ-OLw" secondAttribute="trailing" constant="8" symbolic="YES" id="D4Z-Q5-iAW"/>
-                                        <constraint firstItem="B7w-Pu-mOt" firstAttribute="trailing" secondItem="JuV-pK-sx6" secondAttribute="trailingMargin" id="LaH-dC-T9y"/>
-                                        <constraint firstItem="4QL-xQ-OLw" firstAttribute="leading" secondItem="JuV-pK-sx6" secondAttribute="leadingMargin" id="O1S-Fr-jtg"/>
-                                        <constraint firstItem="4QL-xQ-OLw" firstAttribute="bottom" secondItem="B7w-Pu-mOt" secondAttribute="bottom" id="UwH-hV-cAy"/>
-                                        <constraint firstItem="4QL-xQ-OLw" firstAttribute="top" secondItem="B7w-Pu-mOt" secondAttribute="top" id="XSU-Iw-cqR"/>
-                                        <constraint firstItem="4QL-xQ-OLw" firstAttribute="centerY" secondItem="JuV-pK-sx6" secondAttribute="centerY" id="gn4-vj-TYQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="B7w-Pu-mOt" secondAttribute="trailing" constant="8" id="206-tv-zle"/>
+                                        <constraint firstItem="B7w-Pu-mOt" firstAttribute="top" secondItem="JuV-pK-sx6" secondAttribute="top" constant="8" id="BfV-Ac-Hez"/>
+                                        <constraint firstAttribute="bottom" secondItem="B7w-Pu-mOt" secondAttribute="bottom" constant="-0.5" id="HCC-IR-Zz1"/>
+                                        <constraint firstAttribute="bottom" secondItem="4QL-xQ-OLw" secondAttribute="bottom" constant="-0.5" id="IYR-Xt-fqP"/>
+                                        <constraint firstAttribute="trailing" secondItem="4QL-xQ-OLw" secondAttribute="trailing" constant="307" id="KP4-WJ-9Fe"/>
+                                        <constraint firstItem="4QL-xQ-OLw" firstAttribute="leading" secondItem="JuV-pK-sx6" secondAttribute="leading" constant="8" id="Ydt-wq-Ffg"/>
+                                        <constraint firstItem="B7w-Pu-mOt" firstAttribute="leading" secondItem="JuV-pK-sx6" secondAttribute="leading" constant="83" id="a8h-jg-kir"/>
+                                        <constraint firstItem="B7w-Pu-mOt" firstAttribute="leading" secondItem="4QL-xQ-OLw" secondAttribute="trailing" constant="15" id="e9E-8w-IF4"/>
+                                        <constraint firstItem="4QL-xQ-OLw" firstAttribute="top" secondItem="JuV-pK-sx6" secondAttribute="top" id="k5Y-vp-xV4"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
