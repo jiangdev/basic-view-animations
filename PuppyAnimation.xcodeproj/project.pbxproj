@@ -67,6 +67,22 @@
 			name = PuppyPictureView;
 			sourceTree = "<group>";
 		};
+		D23B4A091FA5A49B00B73AB8 /* PuppyPlayView */ = {
+			isa = PBXGroup;
+			children = (
+				D2ECE0581F8EEB4E00F85974 /* PuppyPlayViewController.swift */,
+			);
+			name = PuppyPlayView;
+			sourceTree = "<group>";
+		};
+		D23B4A0A1FA5A4B900B73AB8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2387D951FA532E600A26812 /* Puppies.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		D2ECE0321F8EDF8F00F85974 = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +105,9 @@
 				D2ECE0501F8EDF9E00F85974 /* Supporting Files */,
 				D2387D901FA5216F00A26812 /* PuppyTableView */,
 				D2387D9A1FA574C000A26812 /* PuppyPictureView */,
+				D23B4A091FA5A49B00B73AB8 /* PuppyPlayView */,
+				D23B4A0A1FA5A4B900B73AB8 /* Resources */,
 				D2ECE0421F8EDF8F00F85974 /* Main.storyboard */,
-				D2ECE0581F8EEB4E00F85974 /* PuppyPlayViewController.swift */,
-				D2387D951FA532E600A26812 /* Puppies.json */,
 			);
 			path = PuppyAnimation;
 			sourceTree = "<group>";

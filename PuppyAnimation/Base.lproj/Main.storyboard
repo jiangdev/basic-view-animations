@@ -149,17 +149,12 @@
                                     <action selector="springPuppyButtonAction:" destination="mn9-o6-P8p" eventType="touchUpInside" id="cWb-eD-8gx"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JDl-m4-Ea2">
-                                <rect key="frame" x="0.0" y="516" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJF-lG-dw5">
+                                <rect key="frame" x="0.0" y="524" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtz-ki-9TX">
-                                <rect key="frame" x="0.0" y="617" width="202" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Transform Puppy"/>
+                                <state key="normal" backgroundImage="puppy1"/>
                                 <connections>
-                                    <action selector="transformPuppyButtonAction:" destination="mn9-o6-P8p" eventType="touchUpInside" id="w25-EQ-gaV"/>
+                                    <action selector="transformPuppyButtonAction:" destination="mn9-o6-P8p" eventType="touchUpInside" id="35Z-d6-i0O"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -170,7 +165,7 @@
                         <outlet property="movePuppyButton" destination="vge-Ia-sbN" id="5tY-R6-i3r"/>
                         <outlet property="rolloverPuppyButton" destination="FvC-g6-CiG" id="UOw-T9-jYd"/>
                         <outlet property="springPuppyButton" destination="Lkf-cA-8vo" id="wbb-9s-wsi"/>
-                        <outlet property="transformPuppyView" destination="JDl-m4-Ea2" id="OBZ-wf-GNe"/>
+                        <outlet property="transformPuppyButton" destination="mJF-lG-dw5" id="stm-Pz-hQ8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3k-m9-tNb" userLabel="First Responder" sceneMemberID="firstResponder"/>

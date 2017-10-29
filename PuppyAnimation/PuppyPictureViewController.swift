@@ -17,7 +17,7 @@ class PuppyPictureViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         firstImage = UIImage.init(named: puppy.imageName)
-        secondImage = UIImage.init(named: "puppyB")
+        secondImage = UIImage.init(named: "fry")
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,7 +45,13 @@ class PuppyPictureViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Puppy Play Segue",
             let destination = segue.destination as? PuppyPlayViewController {
+            destination.navigationItem.title = "Play with \(puppy.name)"
             destination.puppy = puppy 
         }
     }
 }
+
+
+
+
+
